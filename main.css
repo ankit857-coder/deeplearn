@@ -3,11 +3,11 @@
     --primary-dark: #1e40af;
     --bg-light: #ffffff;
     --bg-card: #ffffff;
-    --text-light: #4b5563;
+    --text-light: #64748b;
     --text-dark: #1f2937;
     --code-bg: #1a1a1a;
     --border-color: #e5e7eb;
-    --background-light: #f9fafb;
+    --background-light: #f8fafc;
 }
 
 body {
@@ -19,10 +19,10 @@ body {
 }
 
 header {
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(255, 255, 255, 0.98);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border-color);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     position: fixed;
     width: 100%;
     top: 0;
@@ -96,7 +96,7 @@ nav {
 .hero {
     text-align: center;
     padding: 10rem 2rem 6rem;
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    background: linear-gradient(135deg, #f1f5f9 0%, #f8fafc 100%);
     position: relative;
     overflow: hidden;
 }
@@ -136,6 +136,7 @@ nav {
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
     margin: 2rem auto;
+    border: 1px solid var(--border-color);
 }
 
 .description p {
@@ -163,7 +164,7 @@ nav {
     border: 1px solid var(--border-color);
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s;
 }
 
@@ -283,7 +284,7 @@ social-links a:hover {
     border: 1px solid var(--border-color);
     padding: 2rem;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     text-align: center;
 }
 
@@ -323,7 +324,8 @@ social-links a:hover {
 }
 
 .github-btn.secondary {
-    background: #4b5563;
+    background: #f1f5f9;
+    color: var(--text-dark);
     border: 1px solid var(--border-color);
 }
 
@@ -360,8 +362,8 @@ social-links a:hover {
 }
 
 .note {
-    background: #fff3cd;
-    border-left: 4px solid #ffc107;
+    background: #fff7ed;
+    border-left: 4px solid #f97316;
     padding: 1rem;
     margin: 1rem 0;
     border-radius: 0 4px 4px 0;
@@ -378,7 +380,7 @@ social-links a:hover {
 }
 
 .note strong {
-    color: #856404;
+    color: #c2410c;
 }
 
 h1, h2, h3, h4, h5, h6 {
