@@ -8,6 +8,8 @@
     --code-bg: #1a1a1a;
     --border-color: #e5e7eb;
     --background-light: #f8fafc;
+    --accent-color: #60a5fa;
+    --accent-light: #93c5fd;
 }
 
 body {
@@ -95,8 +97,8 @@ nav {
 
 .hero {
     text-align: center;
-    padding: 10rem 2rem 6rem;
-    background: linear-gradient(135deg, #f1f5f9 0%, #f8fafc 100%);
+    padding: 12rem 2rem 8rem;
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
     position: relative;
     overflow: hidden;
 }
@@ -112,21 +114,82 @@ nav {
     z-index: 0;
 }
 
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+}
+
+.hero-shape {
+    position: absolute;
+    background: linear-gradient(135deg, var(--accent-color) 0%, var(--accent-light) 100%);
+    border-radius: 50%;
+    opacity: 0.1;
+}
+
+.hero-shape:nth-child(1) {
+    width: 500px;
+    height: 500px;
+    top: -250px;
+    left: -100px;
+}
+
+.hero-shape:nth-child(2) {
+    width: 300px;
+    height: 300px;
+    bottom: -150px;
+    right: -50px;
+}
+
+.hero-pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: radial-gradient(var(--border-color) 1px, transparent 1px);
+    background-size: 20px 20px;
+    opacity: 0.3;
+}
+
+.hero-badge {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: rgba(37, 99, 235, 0.1);
+    color: var(--primary-color);
+    border-radius: 20px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    backdrop-filter: blur(10px);
+}
+
 .hero-text {
     position: relative;
     z-index: 1;
     max-width: 900px;
     margin: 0 auto;
 }
-;
-.subtitle {
-    font-size: 2rem;
-    background: linear-gradient(135deg, var(--primary-color) 0%, #1e40af 100%);
+
+.hero h1 {
+    font-size: 4rem;
+    margin: 0.5rem 0 1rem;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-bottom: 2rem;
-    font-weight: 700;
+    line-height: 1.2;
+}
+
+.subtitle {
+    font-size: 1.8rem;
+    color: var(--text-dark);
+    margin-bottom: 3rem;
+    font-weight: 600;
+    position: relative;
 }
 
 .description {
@@ -143,11 +206,6 @@ nav {
     margin-bottom: 1.5rem;
     line-height: 1.8;
     color: var(--text-light);
-}
-
-.hero h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
 }
 
 .project-grid {
