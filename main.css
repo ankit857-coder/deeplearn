@@ -1,24 +1,25 @@
 :root {
-    --primary-color: #60a5fa;
-    --primary-dark: #3b82f6;
-    --bg-dark: #0f172a;
-    --bg-card: #1e293b;
-    --text-light: #94a3b8;
-    --text-dark: #f1f5f9;
-    --code-bg: #020617;
-    --border-color: #334155;
+    --primary-color: #2563eb;
+    --primary-dark: #1e40af;
+    --bg-light: #ffffff;
+    --bg-card: #ffffff;
+    --text-light: #4b5563;
+    --text-dark: #1f2937;
+    --code-bg: #1a1a1a;
+    --border-color: #e5e7eb;
+    --background-light: #f9fafb;
 }
 
 body {
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
-    background: var(--bg-dark);
+    background: var(--background-light);
     color: var(--text-dark);
 }
 
 header {
-    background: rgba(15, 23, 42, 0.95);
+    background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border-color);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -95,7 +96,7 @@ nav {
 .hero {
     text-align: center;
     padding: 10rem 2rem 6rem;
-    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
     position: relative;
     overflow: hidden;
 }
@@ -129,7 +130,7 @@ nav {
 }
 
 .description {
-    background: var(--bg-card);
+    background: var(--bg-light);
     backdrop-filter: blur(10px);
     padding: 2rem;
     border-radius: 12px;
@@ -158,7 +159,7 @@ nav {
 }
 
 .project-card {
-    background: var(--bg-card);
+    background: var(--bg-light);
     border: 1px solid var(--border-color);
     border-radius: 8px;
     overflow: hidden;
@@ -190,7 +191,7 @@ nav {
 }
 
 .tags span {
-    background: var(--bg-dark);
+    background: var(--background-light);
     padding: 0.25rem 0.75rem;
     border-radius: 15px;
     font-size: 0.9rem;
@@ -278,7 +279,7 @@ social-links a:hover {
 }
 
 .feature-card {
-    background: var(--bg-card);
+    background: var(--bg-light);
     border: 1px solid var(--border-color);
     padding: 2rem;
     border-radius: 8px;
@@ -322,7 +323,7 @@ social-links a:hover {
 }
 
 .github-btn.secondary {
-    background: var(--bg-card);
+    background: #4b5563;
     border: 1px solid var(--border-color);
 }
 
@@ -334,7 +335,7 @@ social-links a:hover {
 }
 
 .command-examples {
-    background: var(--bg-card);
+    background: var(--background-light);
     border: 1px solid var(--border-color);
     padding: 1.5rem;
     border-radius: 8px;
@@ -359,8 +360,8 @@ social-links a:hover {
 }
 
 .note {
-    background: #1e293b;
-    border-left: 4px solid var(--primary-color);
+    background: #fff3cd;
+    border-left: 4px solid #ffc107;
     padding: 1rem;
     margin: 1rem 0;
     border-radius: 0 4px 4px 0;
@@ -377,7 +378,7 @@ social-links a:hover {
 }
 
 .note strong {
-    color: var(--primary-color);
+    color: #856404;
 }
 
 h1, h2, h3, h4, h5, h6 {
