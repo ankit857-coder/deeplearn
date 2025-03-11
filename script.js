@@ -1,4 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Add smooth scroll behavior
+    document.documentElement.style.scrollBehavior = 'smooth';
+
     // Initialize animations
     initializeAnimations();
     
@@ -46,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function initializeAnimations() {
-    // Animate hero section on load
+    // Enhance hero animation
     const heroSection = document.querySelector('.hero');
     if (heroSection) {
         heroSection.style.opacity = '0';
@@ -54,7 +57,7 @@ function initializeAnimations() {
         setTimeout(() => {
             heroSection.style.opacity = '1';
             heroSection.style.transform = 'translateY(0)';
-            heroSection.style.transition = 'all 0.8s ease-out';
+            heroSection.style.transition = 'all 1.2s cubic-bezier(0.4, 0, 0.2, 1)';
         }, 300);
     }
 
