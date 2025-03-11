@@ -1,23 +1,27 @@
 :root {
-    --primary-color: #2563eb;
-    --text-dark: #1f2937;
-    --text-light: #4b5563;
-    --background-light: #f9fafb;
-    --code-bg: #1a1a1a;
+    --primary-color: #60a5fa;
+    --primary-dark: #3b82f6;
+    --bg-dark: #0f172a;
+    --bg-card: #1e293b;
+    --text-light: #94a3b8;
+    --text-dark: #f1f5f9;
+    --code-bg: #020617;
+    --border-color: #334155;
 }
 
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
-    background: var(--background-light);
+    font-family: 'Open Sans', sans-serif;
+    background: var(--bg-dark);
     color: var(--text-dark);
 }
 
 header {
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(15, 23, 42, 0.95);
     backdrop-filter: blur(10px);
-    box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+    border-bottom: 1px solid var(--border-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     position: fixed;
     width: 100%;
     top: 0;
@@ -59,7 +63,7 @@ nav {
     color: var(--primary-color);
     margin: 0;
     letter-spacing: -0.5px;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .site-info {
@@ -74,7 +78,7 @@ nav {
 }
 
 .portfolio-link {
-    background: linear-gradient(135deg, var(--primary-color) 0%, #1e40af 100%);
+    background: var(--primary-color);
     color: white;
     padding: 0.75rem 1.5rem;
     border-radius: 8px;
@@ -85,14 +89,13 @@ nav {
 }
 
 .portfolio-link:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(37, 99, 235, 0.3);
+    background: var(--primary-dark);
 }
 
 .hero {
     text-align: center;
     padding: 10rem 2rem 6rem;
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
     position: relative;
     overflow: hidden;
 }
@@ -114,10 +117,10 @@ nav {
     max-width: 900px;
     margin: 0 auto;
 }
-
+;
 .subtitle {
     font-size: 2rem;
-    background: linear-gradisent(135deg, var(--primary-color) 0%, #1e40af 100%);
+    background: linear-gradient(135deg, var(--primary-color) 0%, #1e40af 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -126,7 +129,7 @@ nav {
 }
 
 .description {
-    background: rgba(255, 255, 255, 0.8);
+    background: var(--bg-card);
     backdrop-filter: blur(10px);
     padding: 2rem;
     border-radius: 12px;
@@ -155,7 +158,8 @@ nav {
 }
 
 .project-card {
-    background: white;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
@@ -186,10 +190,11 @@ nav {
 }
 
 .tags span {
-    background: var(--background-light);
+    background: var(--bg-dark);
     padding: 0.25rem 0.75rem;
     border-radius: 15px;
     font-size: 0.9rem;
+    color: var(--text-light);
 }
 
 .read-more {
@@ -273,7 +278,8 @@ social-links a:hover {
 }
 
 .feature-card {
-    background: white;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
@@ -307,6 +313,19 @@ social-links a:hover {
     transform: translateY(-2px);
 }
 
+.github-btn.primary {
+    background: var(--primary-color);
+}
+
+.github-btn.primary:hover {
+    background: var(--primary-dark);
+}
+
+.github-btn.secondary {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+}
+
 .features-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -315,7 +334,8 @@ social-links a:hover {
 }
 
 .command-examples {
-    background: #f8f9fa;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
     padding: 1.5rem;
     border-radius: 8px;
     margin: 1.5rem 0;
@@ -338,17 +358,9 @@ social-links a:hover {
     flex-wrap: wrap;
 }
 
-.github-btn.secondary {
-    background: #4b5563;
-}
-
-.github-btn.primary {
-    background: #2563eb;
-}
-
 .note {
-    background: #fff3cd;
-    border-left: 4px solid #ffc107;
+    background: #1e293b;
+    border-left: 4px solid var(--primary-color);
     padding: 1rem;
     margin: 1rem 0;
     border-radius: 0 4px 4px 0;
@@ -365,7 +377,11 @@ social-links a:hover {
 }
 
 .note strong {
-    color: #856404;
+    color: var(--primary-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
 }
 
 @media (max-width: 768px) {
