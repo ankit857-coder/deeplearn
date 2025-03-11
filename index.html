@@ -7,24 +7,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&family=Fira+Code&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <header class="blur-effect">
         <nav>
             <div class="header-content">
-                <a href="https://ankit857-coder.github.io/deeplearn/" class="logo">
-                    <img src="assests/KeyPower.png" alt="DeepLearn" class="logo-img">
+                <a href="index.html" class="logo">
+                    <img src="assests/DeepLearn.png" alt="DeepLearn" class="logo-img">
                 </a>
                 <div class="site-info">
                     <h1 class="site-title">DeepLearn</h1>
                     <p>Designed and developed by Ankit Kumar Verma</p>
                 </div>
             </div>
-            <a href="https://ankit857-coder.github.io/portfolio/" class="portfolio-link">
-                <i class="fas fa-user"></i> See Portfolio
-            </a>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link active"><i class="fas fa-home"></i> Home</a>
+                <a href="articles.html" class="nav-link"><i class="fas fa-book"></i> Articles</a>
+                <a href="about.html" class="nav-link"><i class="fas fa-info-circle"></i> About</a>
+            </div>
         </nav>
     </header>
 
@@ -48,174 +50,30 @@
         </section>
 
         <section class="projects">
-            <div class="project-grid">
-                <article class="project-card">
-                    <div class="card-content">
-                        <i class="fas fa-microphone-alt"></i>
-                        <h2>Biovox</h2>
-                        <p>Advanced Voice Assistant with Windows Control</p>
-                        <div class="tags">
-                            <span>Python</span>
-                            <span>AI</span>
-                            <span>Voice Processing</span>
-                        </div>
-                        <a href="#biovox" class="read-more">Read Article</a>
+            <div class="features-container">
+                <h2>Explore My Development Journey</h2>
+                <div class="info-grid">
+                    <div class="info-card">
+                        <i class="fas fa-robot"></i>
+                        <h3>AI & Machine Learning</h3>
+                        <p>Advanced projects combining artificial intelligence with practical applications.</p>
                     </div>
-                </article>
-                <!-- More project cards will be added here -->
-            </div>
-        </section>
-
-        <section id="biovox" class="article-container">
-            <h1>Biovox - Advanced Voice Assistant</h1>
-            
-            <div class="article-meta">
-                <span><i class="fas fa-calendar"></i> January 2024</span>
-                <span><i class="fas fa-tag"></i> Voice Assistant, AI, Python</span>
-            </div>
-
-            <section class="article-intro">
-                <h2>Introduction</h2>
-                <p>Biovox is an advanced voice assistant that combines natural language processing with Windows control capabilities. Built with privacy and security in mind, it offers hands-free control of your computer while ensuring your data remains protected.</p>
-                <div class="github-stats">
-                    <a href="https://github.com/ankit857-coder/Biovox" class="github-widget">
-                        <img src="https://img.shields.io/github/stars/ankit857-coder/Biovox?style=social" alt="GitHub stars">
-                        <img src="https://img.shields.io/github/forks/ankit857-coder/Biovox?style=social" alt="GitHub forks">
-                        <img src="https://img.shields.io/github/issues/ankit857-coder/Biovox?style=social" alt="GitHub issues">
-                    </a>
-                </div>
-            </section>
-
-            <section class="key-features">
-                <h2>Key Features</h2>
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <i class="fas fa-brain"></i>
-                        <h3>Advanced AI Model</h3>
-                        <p>Utilizes state-of-the-art natural language processing models for accurate command interpretation.</p>
+                    <div class="info-card">
+                        <i class="fas fa-code-branch"></i>
+                        <h3>Software Development</h3>
+                        <p>Clean code architecture and modern development practices.</p>
                     </div>
-                    <div class="feature-card">
-                        <i class="fas fa-lock"></i>
-                        <h3>Privacy Focused</h3>
-                        <p>Operates locally on your machine, ensuring your voice commands never leave your computer.</p>
-                    </div>
-                    <div class="feature-card">
-                        <i class="fas fa-desktop"></i>
-                        <h3>Windows Integration</h3>
-                        <p>Seamlessly controls Windows applications and system functions through voice commands.</p>
+                    <div class="info-card">
+                        <i class="fas fa-cubes"></i>
+                        <h3>System Architecture</h3>
+                        <p>Scalable solutions and efficient system designs.</p>
                     </div>
                 </div>
-            </section>
-
-            <section class="installation">
-                <h2>Installation</h2>
-                <div class="code-block">
-                    <pre><code>git clone https://github.com/ankit857-coder/Biovox.git
-cd Biovox
-pip install -r requirements.txt</code></pre>
-                </div>
-                <p>Make sure you have Python 3.8 or higher installed on your Windows machine.</p>
-            </section>
-
-            <section class="github-deployment">
-                <h2>Uploading to GitHub</h2>
-                <p>Follow these steps to upload your project to GitHub:</p>
-                <div class="code-block">
-                    <pre><code># Initialize Git repository
-git init
-
-# Add all files to staging
-git add .
-
-# Commit your changes
-git commit -m "Initial commit"
-
-# Add GitHub repository as remote
-git remote add origin https://github.com/yourusername/your-repo-name.git
-
-# Push to GitHub
-git push -u origin main</code></pre>
-                </div>
-                <p>Make sure to replace 'yourusername' and 'your-repo-name' with your actual GitHub username and repository name.</p>
-                <div class="note">
-                    <p><strong>Note:</strong> Before pushing, ensure you have:</p>
-                    <ul>
-                        <li>Created a GitHub account</li>
-                        <li>Created a new repository on GitHub</li>
-                        <li>Installed Git on your local machine</li>
-                        <li>Configured Git with your credentials</li>
-                    </ul>
-                </div>
-            </section>
-
-            <section class="usage">
-                <h2>Usage Guide</h2>
-                <p>Biovox is designed to be intuitive and easy to use. Here's how to get started:</p>
-                <ol>
-                    <li>Run the main script using Python</li>
-                    <li>Wait for the "Listening..." prompt</li>
-                    <li>Speak your command clearly</li>
-                    <li>Watch as Biovox executes your command</li>
-                </ol>
-                <div class="command-examples">
-                    <h3>Example Commands</h3>
-                    <ul>
-                        <li>"Open Chrome"</li>
-                        <li>"Search for weather"</li>
-                        <li>"What's the time?"</li>
-                        <li>"Open system settings"</li>
-                    </ul>
-                </div>
-            </section>
-
-            <section class="technical-details">
-                <h2>Technical Implementation</h2>
-                <div class="code-block">
-                    <pre><code>import speech_recognition as sr
-import pyttsx3
-import pyautogui
-
-def listen():
-    recognizer = sr.Recognizer()
-    with sr.Microphone() as source:
-        print("Listening...")
-        audio = recognizer.listen(source)
-    return audio</code></pre>
-                </div>
-                <p>The implementation uses Python's speech recognition capabilities combined with automation libraries for system control.</p>
-            </section>
-
-            <section class="architecture">
-                <h2>Technical Architecture</h2>
-                <p>Biovox is built using a modular architecture that separates concerns and makes the code maintainable:</p>
-                <ul>
-                    <li><strong>Speech Recognition Module:</strong> Handles voice input processing</li>
-                    <li><strong>Command Parser:</strong> Interprets natural language commands</li>
-                    <li><strong>Action Engine:</strong> Executes system commands</li>
-                    <li><strong>Security Layer:</strong> Ensures safe operation</li>
-                </ul>
-            </section>
-
-            <section class="future-development">
-                <h2>Future Development</h2>
-                <ul>
-                    <li>Enhanced natural language understanding</li>
-                    <li>Face Recognition</li>
-                    <li>Extended application support</li>
-                    <li>Call function</li>
-                </ul>
-            </section>
-
-            <div class="article-cta">
-                <div class="cta-group">
-                    <a href="https://github.com/ankit857-coder/Biovox" class="github-btn primary">
-                        <i class="fab fa-github"></i> View Project on GitHub
-                    </a>
-                    <a href="https://github.com/ankit857-coder/Biovox/issues" class="github-btn secondary">
-                        <i class="fas fa-bug"></i> Report Issues
-                    </a>
-                    <a href="../index.html" class="github-btn">
-                        <i class="fas fa-arrow-left"></i> Back to Articles
+                <div class="explore-section">
+                    <p class="explore-text">Ready to dive deeper?</p>
+                    <a href="articles.html" class="explore-button">
+                        <span>View All Projects</span>
+                        <i class="fas fa-arrow-right"></i>
                     </a>
                 </div>
             </div>
@@ -223,7 +81,7 @@ def listen():
     </main>
 
     <footer>
-        <p>&copy; 2024 DeepLearn by Ankit Kumar Verma</p>
+        <p>&copy; 2025 DeepLearn by Ankit Kumar Verma</p>
         <div class="social-links">
             <a href="https://github.com/ankit857-coder" target="_blank"><i class="fab fa-github"></i></a>
         </div>

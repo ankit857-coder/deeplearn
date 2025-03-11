@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles - DeepLearn</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header class="blur-effect">
+        <nav>
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <img src="assests/DeepLearn.png" alt="DeepLearn" class="logo-img">
+                </a>
+                <div class="site-info">
+                    <h1 class="site-title">DeepLearn</h1>
+                    <p>Designed and developed by Ankit Kumar Verma</p>
+                </div>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
+                <a href="articles.html" class="nav-link active"><i class="fas fa-book"></i> Articles</a>
+                <a href="about.html" class="nav-link"><i class="fas fa-info-circle"></i> About</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="articles-hero">
+            <div class="hero-background">
+                <div class="hero-shape"></div>
+                <div class="hero-pattern"></div>
+            </div>
+            <div class="articles-hero-content">
+                <h1>Technical Articles</h1>
+                <p class="subtitle">Deep Dives into Software Engineering & AI</p>
+                <div class="articles-stats">
+                    <div class="stat-item">
+                        <i class="fas fa-file-code"></i>
+                        <span>Latest Projects</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-brain"></i>
+                        <span>AI Innovations</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-code"></i>
+                        <span>Development Insights</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="articles-filters">
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="ai-ml">AI & ML</button>
+                <button class="filter-btn" data-filter="web-dev">Web Dev</button>
+                <button class="filter-btn" data-filter="automation">Automation</button>
+            </div>
+        </section>
+
+        <section class="articles-grid">
+            <article class="article-card featured ai-ml automation">
+                <div class="article-image-container spotlight">
+                    <img src="assests/biovox-preview.png" alt="Biovox Preview" class="article-img zoom">
+                    <div class="article-overlay">
+                        <span class="article-category">Featured Project</span>
+                    </div>
+                </div>
+                <div class="article-content">
+                    <div class="article-header">
+                        <h2>Biovox - AI Voice Assistant</h2>
+                        <p class="article-excerpt">Advanced voice control system with natural language processing and Windows integration.</p>
+                    </div>
+                    <div class="article-footer">
+                        <div class="article-meta">
+                            <span><i class="fas fa-calendar"></i> January 2024</span>
+                            <span><i class="fas fa-clock"></i> 10 min read</span>
+                        </div>
+                        <div class="article-tags">
+                            <span>Python</span>
+                            <span>AI</span>
+                        </div>
+                        <a href="#biovox" class="read-more">Read Article <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="article-card web-dev">
+                <div class="article-image-container spotlight">
+                    <img src="assests/webdev-modern.png" alt="Web Development" class="article-img zoom">
+                    <div class="article-overlay">
+                        <span class="article-category">Latest Project</span>
+                    </div>
+                </div>
+                <div class="article-content">
+                    <div class="article-header">
+                        <h2>Modern Web Development Journey</h2>
+                        <p class="article-excerpt">Exploring full-stack development with React, Node.js, and modern web technologies to create responsive and performant applications.</p>
+                    </div>
+                    <div class="article-footer">
+                        <div class="article-meta">
+                            <span><i class="fas fa-calendar"></i> February 2024</span>
+                            <span><i class="fas fa-clock"></i> 5 min read</span>
+                        </div>
+                        <div class="article-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <a href="#webdev" class="read-more">Coming Soon <i class="fas fa-hourglass-half"></i></a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="article-card ai-ml">
+                <div class="article-image-container spotlight">
+                    <img src="assests/ai-preview.webp" alt="AI Projects" class="article-img zoom">
+                    <div class="article-overlay">
+                        <span class="article-category">Research</span>
+                    </div>
+                </div>
+                <div class="article-content">
+                    <div class="article-header">
+                        <h2>AI & Deep Learning Research</h2>
+                        <p class="article-excerpt">Implementing cutting-edge machine learning models for computer vision and natural language processing tasks.</p>
+                    </div>
+                    <div class="article-footer">
+                        <div class="article-meta">
+                            <span><i class="fas fa-calendar"></i> March 2024</span>
+                            <span><i class="fas fa-clock"></i> 10 min read</span>
+                        </div>
+                        <div class="article-tags">
+                            <span>TensorFlow</span>
+                            <span>PyTorch</span>
+                            <span>OpenCV</span>
+                        </div>
+                        <a href="#ai-research" class="read-more">Coming Soon <i class="fas fa-flask"></i></a>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section id="biovox" class="article-container">
+            <div class="article-header">
+                <div class="article-banner spotlight">
+                    <img src="assests/biovox-preview.png" alt="Biovox Banner" class="banner-img">
+                </div>
+                <h1>Biovox - Advanced Voice Assistant</h1>
+                <div class="article-meta">
+                    <span><i class="fas fa-calendar"></i> January 2025</span>
+                    <span><i class="fas fa-tag"></i> Voice Assistant, AI, Python</span>
+                    <span><i class="fas fa-clock"></i> 10 min read</span>
+                </div>
+            </div>
+
+            <div class="article-content">
+                <section class="article-intro">
+                    <h2>Introduction</h2>
+                    <p>Biovox is a cutting-edge voice assistant that integrates advanced AI capabilities with Windows control. This project demonstrates the practical application of machine learning in everyday computing tasks.</p>
+                    
+                    <div class="key-points">
+                        <h3>Key Highlights</h3>
+                        <ul>
+                            <li>Natural Language Processing for accurate command interpretation</li>
+                            <li>Local processing for enhanced privacy and security</li>
+                            <li>Seamless Windows integration for system control</li>
+                            <li>Customizable command set for personalized experience</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="implementation-details">
+                    <h2>Technical Implementation</h2>
+                    <p>The core functionality is built using Python's powerful libraries:</p>
+                    <div class="code-block">
+                        <pre><code>import speech_recognition as sr
+import pyttsx3
+import pyautogui
+import numpy as np
+from tensorflow import keras</code></pre>
+                    </div>
+                    
+                    <h3>Core Components</h3>
+                    <ul>
+                        <li>Speech Recognition Engine: Uses advanced audio processing</li>
+                        <li>Command Parser: Neural network-based NLP model</li>
+                        <li>Action Controller: System automation framework</li>
+                        <li>Voice Synthesis: Natural text-to-speech output</li>
+                    </ul>
+                </section>
+            </div>
+
+            <div class="article-cta">
+                <div class="cta-group">
+                    <a href="https://github.com/ankit857-coder/Biovox" class="github-btn primary">
+                        <i class="fab fa-github"></i> View Project on GitHub
+                    </a>
+                    <a href="https://github.com/ankit857-coder/Biovox/issues" class="github-btn secondary">
+                        <i class="fas fa-bug"></i> Report Issues
+                    </a>
+                    <a href="articles.html" class="github-btn">
+                        <i class="fas fa-arrow-left"></i> Back to Articles
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 DeepLearn by Ankit Kumar Verma</p>
+        <div class="social-links">
+            <a href="https://github.com/ankit857-coder" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
